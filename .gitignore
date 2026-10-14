@@ -2,3 +2,12 @@
 __pycache__/
 .DS_Store
 secrets.toml
+
+# Portfolio local configuration and generated runtime files
+.venv/
+__pycache__/
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+*.log

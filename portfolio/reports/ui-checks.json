@@ -1,0 +1,9 @@
+{
+  "checks": [
+    "initial render",
+    "answer with original sources",
+    "sensitive request refusal",
+    "feedback retained"
+  ],
+  "passed": true
+}

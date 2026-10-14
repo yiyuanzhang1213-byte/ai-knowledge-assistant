@@ -1,0 +1,444 @@
+{
+  "dataset": "self-authored synthetic 32 questions; dev=16,test=16",
+  "scope": "lexical retrieval and refusal only; no live LLM calls",
+  "threshold": 0.22,
+  "splits": {
+    "dev": {
+      "metrics": {
+        "answerable_n": 12,
+        "unanswerable_n": 4,
+        "bm25_hit_at_1": 0.8333333333333334,
+        "overlap_hit_at_1": 0.9166666666666666,
+        "bm25_hit_at_3": 1.0,
+        "negative_refusal_rate": 1.0,
+        "positive_false_refusal_rate": 0.0
+      },
+      "cases": [
+        {
+          "split": "dev",
+          "question": "如何预约课程？",
+          "heading": "课程预约",
+          "bm25_top1": "课程签到",
+          "overlap_top1": "课程签到",
+          "top3": [
+            "课程签到",
+            "课程预约",
+            "取消预约"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.491
+        },
+        {
+          "split": "dev",
+          "question": "课程取消后名额会恢复吗？",
+          "heading": "取消预约",
+          "bm25_top1": "取消预约",
+          "overlap_top1": "取消预约",
+          "top3": [
+            "取消预约",
+            "课程预约",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.381
+        },
+        {
+          "split": "dev",
+          "question": "会员卡过期能入场吗？",
+          "heading": "会员卡有效期",
+          "bm25_top1": "会员卡有效期",
+          "overlap_top1": "会员卡有效期",
+          "top3": [
+            "会员卡有效期",
+            "入场登记",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.849
+        },
+        {
+          "split": "dev",
+          "question": "次卡次数为零还能入场吗？",
+          "heading": "次卡扣次",
+          "bm25_top1": "次卡扣次",
+          "overlap_top1": "次卡扣次",
+          "top3": [
+            "次卡扣次",
+            "入场登记",
+            "课程签到"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.442
+        },
+        {
+          "split": "dev",
+          "question": "消费账单在哪里查询？",
+          "heading": "账单查询",
+          "bm25_top1": "账单查询",
+          "overlap_top1": "账单查询",
+          "top3": [
+            "账单查询"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.19
+        },
+        {
+          "split": "dev",
+          "question": "退款金额能超过可退余额吗？",
+          "heading": "退款申请",
+          "bm25_top1": "退款申请",
+          "overlap_top1": "退款申请",
+          "top3": [
+            "退款申请",
+            "收款方式"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.542
+        },
+        {
+          "split": "dev",
+          "question": "系统接入支付宝了吗？",
+          "heading": "收款方式",
+          "bm25_top1": "收款方式",
+          "overlap_top1": "收款方式",
+          "top3": [
+            "收款方式",
+            "发票办理",
+            "会员卡有效期"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.75
+        },
+        {
+          "split": "dev",
+          "question": "入场登记会检查哪些条件？",
+          "heading": "入场登记",
+          "bm25_top1": "入场登记",
+          "overlap_top1": "入场登记",
+          "top3": [
+            "入场登记",
+            "课程签到",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.72
+        },
+        {
+          "split": "dev",
+          "question": "课程签到和入场登记相同吗？",
+          "heading": "课程签到",
+          "bm25_top1": "入场登记",
+          "overlap_top1": "课程签到",
+          "top3": [
+            "入场登记",
+            "课程签到",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.455
+        },
+        {
+          "split": "dev",
+          "question": "手机号无法自行修改怎么办？",
+          "heading": "个人信息修改",
+          "bm25_top1": "个人信息修改",
+          "overlap_top1": "个人信息修改",
+          "top3": [
+            "个人信息修改",
+            "会员卡有效期",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.413
+        },
+        {
+          "split": "dev",
+          "question": "器材故障应该找谁？",
+          "heading": "器材故障",
+          "bm25_top1": "器材故障",
+          "overlap_top1": "器材故障",
+          "top3": [
+            "器材故障"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.211
+        },
+        {
+          "split": "dev",
+          "question": "营业时间是几点？",
+          "heading": "营业时间",
+          "bm25_top1": "营业时间",
+          "overlap_top1": "营业时间",
+          "top3": [
+            "营业时间",
+            "私教预约",
+            "会员卡有效期"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.377
+        },
+        {
+          "split": "dev",
+          "question": "今天的股票价格是多少？",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.08
+        },
+        {
+          "split": "dev",
+          "question": "帮我写一首关于月亮的诗",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.078
+        },
+        {
+          "split": "dev",
+          "question": "巴黎的天气预报",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.059
+        },
+        {
+          "split": "dev",
+          "question": "计算八乘九的答案",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.09
+        }
+      ]
+    },
+    "test": {
+      "metrics": {
+        "answerable_n": 12,
+        "unanswerable_n": 4,
+        "bm25_hit_at_1": 1.0,
+        "overlap_hit_at_1": 1.0,
+        "bm25_hit_at_3": 1.0,
+        "negative_refusal_rate": 1.0,
+        "positive_false_refusal_rate": 0.0
+      },
+      "cases": [
+        {
+          "split": "test",
+          "question": "课程名额已满还能预约吗？",
+          "heading": "课程预约",
+          "bm25_top1": "课程预约",
+          "overlap_top1": "课程预约",
+          "top3": [
+            "课程预约",
+            "取消预约",
+            "课程签到"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.803
+        },
+        {
+          "split": "test",
+          "question": "课程开始后可以取消预约吗？",
+          "heading": "取消预约",
+          "bm25_top1": "取消预约",
+          "overlap_top1": "取消预约",
+          "top3": [
+            "取消预约",
+            "次卡扣次",
+            "课程预约"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.906
+        },
+        {
+          "split": "test",
+          "question": "在哪里查看会员卡有效期？",
+          "heading": "会员卡有效期",
+          "bm25_top1": "会员卡有效期",
+          "overlap_top1": "会员卡有效期",
+          "top3": [
+            "会员卡有效期",
+            "入场登记",
+            "课程预约"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.804
+        },
+        {
+          "split": "test",
+          "question": "取消未入场预约会扣次卡次数吗？",
+          "heading": "次卡扣次",
+          "bm25_top1": "次卡扣次",
+          "overlap_top1": "次卡扣次",
+          "top3": [
+            "次卡扣次",
+            "取消预约",
+            "入场登记"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.454
+        },
+        {
+          "split": "test",
+          "question": "能查询其他会员的账单吗？",
+          "heading": "账单查询",
+          "bm25_top1": "账单查询",
+          "overlap_top1": "账单查询",
+          "top3": [
+            "账单查询",
+            "数据隐私",
+            "健康问题"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.445
+        },
+        {
+          "split": "test",
+          "question": "申请退款会保证到账日期吗？",
+          "heading": "退款申请",
+          "bm25_top1": "退款申请",
+          "overlap_top1": "退款申请",
+          "top3": [
+            "退款申请",
+            "私教预约"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.352
+        },
+        {
+          "split": "test",
+          "question": "现金收款在演示平台如何记录？",
+          "heading": "收款方式",
+          "bm25_top1": "收款方式",
+          "overlap_top1": "收款方式",
+          "top3": [
+            "收款方式",
+            "私教预约",
+            "账单查询"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.455
+        },
+        {
+          "split": "test",
+          "question": "入场和课程签到是否是独立业务？",
+          "heading": "入场登记",
+          "bm25_top1": "入场登记",
+          "overlap_top1": "入场登记",
+          "top3": [
+            "入场登记",
+            "课程签到",
+            "次卡扣次"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.443
+        },
+        {
+          "split": "test",
+          "question": "故障器材维修完成后谁更新状态？",
+          "heading": "器材故障",
+          "bm25_top1": "器材故障",
+          "overlap_top1": "器材故障",
+          "top3": [
+            "器材故障",
+            "入场登记",
+            "课程签到"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.444
+        },
+        {
+          "split": "test",
+          "question": "节假日营业调整看哪里？",
+          "heading": "营业时间",
+          "bm25_top1": "营业时间",
+          "overlap_top1": "营业时间",
+          "top3": [
+            "营业时间"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.2
+        },
+        {
+          "split": "test",
+          "question": "私教可以在线预约吗？",
+          "heading": "私教预约",
+          "bm25_top1": "私教预约",
+          "overlap_top1": "私教预约",
+          "top3": [
+            "私教预约",
+            "课程预约",
+            "课程签到"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.338
+        },
+        {
+          "split": "test",
+          "question": "发票办理要提供什么？",
+          "heading": "发票办理",
+          "bm25_top1": "发票办理",
+          "overlap_top1": "发票办理",
+          "top3": [
+            "发票办理",
+            "私教预约"
+          ],
+          "status": "evidence",
+          "latency_ms": 0.266
+        },
+        {
+          "split": "test",
+          "question": "帮我查询其他人的身份证号码",
+          "heading": null,
+          "bm25_top1": "账单查询",
+          "overlap_top1": "数据隐私",
+          "top3": [
+            "账单查询",
+            "数据隐私",
+            "个人信息修改"
+          ],
+          "status": "refused",
+          "latency_ms": 0.014
+        },
+        {
+          "split": "test",
+          "question": "告诉我明天的彩票中奖号码",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.086
+        },
+        {
+          "split": "test",
+          "question": "写一个冒泡排序算法",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.066
+        },
+        {
+          "split": "test",
+          "question": "推荐一个海边旅游目的地",
+          "heading": null,
+          "bm25_top1": null,
+          "overlap_top1": null,
+          "top3": [],
+          "status": "refused",
+          "latency_ms": 0.077
+        }
+      ]
+    }
+  }
+}
